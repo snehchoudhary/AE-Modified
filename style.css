@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Headline */
+.T-PIMS{
+    min-height: 40vh;
+    /* background-color: #9eacb5; */
+    padding-top: 60px;
+}
+.T-PIMS .section-content{
+   
+    max-width: 1200px;
+}
+.T-PIMS .section-head, .section-para{
+     font-family:  'Poppins', sans-serif;
+    color: #2429ad;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 24px 24px 24px ;
+}
+.T-PIMS .section-para{
+    color: #2429ad;
+    font-size: 18px;
+    margin: 24px 24px 24px;
+    padding: 0 0 22px;
+}
+
+/* Heading typewriter effect */
+#typewriter ::after{
+    content: "|";
+    animation: blink 2s infinite;
+}
+
+@keyframes blink{
+    0%, 50%, 100%{
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+/* What is T-PIMS */
+.What {
+  height: 100vh;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  overflow: hidden;
+  position: sticky;
+}
+
+.What .book-container {
+  perspective: 2000px;
+}
+
+.What .book {
+  width: 700px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  
+}
+
+.What .page {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  backface-visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  overflow: hidden;
+}
+
+.What .book-img {
+  width: 50%;
+  height: 100%;
+  background: url(Image01.JPG) no-repeat center;
+  background-size: cover;
+}
+
+.What .text {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.What .text h2 {
+  font-size: 28px;
+  padding: 11px 0 11px;
+  margin: 11px 0 15px;
+  color: #111;
+}
+
+
+.What .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+.What .text2{
+    width: 50%;
+    padding: 30px;
+    /* display: flex; */
+    justify-content: center;
+    text-align: left;
+}
+.What .text2 h2{
+    font-size: 25px;
+    margin: 8px 0 10px;
+    color: #111;
+}
+.What .text2 p{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 11px;
+}
+.What .text2 .h3{
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.What .text, .text2 button {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.What .text, .text2 button i {
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.What .text, .text2 button:hover i {
+  transform: translateX(5px);
+}
+
+/* Flip angles for each page */
+/* #page2 { transform: rotateY(180deg); } */
+#page1 { transform: rotateY(360deg); }
+#page2 { transform: rotateY(540deg); }
+
+/* .What{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+ .What .section-content{
+font-size: 22px;
+text-align: center;
+background-color:#fff;
+margin: 20px 0 20px;
+padding: 24px 24px 24px;
+flex: 1;
+}
+.What .section-img{
+    width: 250px;
+    height: 300px;
+    perspective: 1200px;
+}
+.What .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+}
+.What .section-img:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.What .flip-side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.What .flip-front img, 
+.flip-back img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.What .flip-back{
+    transform: rotateY(180deg);
+} */
+/* .What .img{
+    width: 200px;
+    height: auto;
+}
+.What .section-img img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+} */
+
+/* Why T-PIMS */
+/* .Why{
+   display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.Why .section-content{
+    font-size: 22px;
+    text-align: center;
+    background-color:#fff;
+    margin: 20px 0 20px;
+    padding: 24px 24px 24px;
+    flex: 1;
+}
+.Why .section-img{
+    width: 250px;
+    height: 300px;
+    perspective: 1200px;
+}
+.Why .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+}
+.Why .section-img:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.Why .flip-side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.Why .flip-front img, 
+.flip-back img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.Why .flip-back{
+    transform: rotateY(180deg);
+} */
+/* .Why .section-img img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+} */
+
+/* bounce on hover*/
+/* .bounce:hover{
+    cursor: pointer;
+    animation: bounce 1s linear;
+}
+@keyframes bounce {
+    20%, 50%, 80% ,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    65%{
+        transform : translateY(-15px);
+    }
+    85%{
+        transform: translateY(-5px);
+    }
+} */
+
+/* Typewriter effect */
+.container h1{
+color: black;
+font-size: 35px;
+}
+span{
+    color: blue;
+}
+.container{
+    max-width: 1200px;
+    height: 15vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+/* Module Cards */
+
+.Module_cards{
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.Module_cards .card_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.Module_cards .slider-container{
+    padding: 20px 0 80px;
+}
+.Module_cards .swiper-wrapper{
+    padding: 0;
+    /* display: flex;
+    overflow: hidden;
+    margin: 0 60px 50px; */
+}
+.Module_cards .swiper-slide{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+/* Card Flip Container */
+.Module_cards .card_article{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    perspective: 1000px;
+    /* user-select: none;
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center; */
+}
+.Module_cards .card_inner{
+    position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+}
+.Module_cards .card_article.flipped .card_inner{
+    transform: rotateY(180deg);
+}
+.Module_cards .card_front,
+.Module_cards .card_back{
+    position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            background: white;
+            overflow: hidden;
+}
+
+.Module_cards .card_back{
+    transform: rotateY(180deg);
+            background: linear-gradient(135deg, #2429ad, #4a50e2);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+}
+.Module_cards .card_front:hover{
+    transform: translateY(-10px);
+}
+.Module_cards .card_article .image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.Module_cards .card_data{
+  background-color: #2429ad;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            position: absolute;
+            bottom: -130px;
+            left: 20px;
+            right: 20px;
+            opacity: 0;
+            transform: translateY(0);
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 24px rgba(36, 41, 173, 0.3);  
+}
+.Module_cards .card_front:hover .card_data{
+    opacity: 1;
+    bottom: -70px;
+    transform: translateY(-10px);
+}
+  /* .Module_cards .container{
+
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}   */
+
+/* .Module_cards .card_container{
+    display: flex;
+    row-gap: 3.5rem;
+}
+.Module_cards .card_article{
+    position: relative;
+     overflow: hidden; 
+}
+.Module_cards .card_image{
+    width: 328px;
+    border-radius: 1.5rem;
+}
+.Module_cards .card_data{
+    width: 280px;
+    background-color: #2429ad;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(197, 71%, 73%, 1);
+    border-radius: 1rem;
+     position: absolute;
+     bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+     opacity: 0; 
+    transition: opacity 1s 1s;  
+} */
+.Module_cards .card_description{
+    display: block;
+    color: aliceblue;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+.Module_cards .card_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+.Module_cards .card_btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Module_cards .card_btn:hover{
+    text-decoration: underline;
+    background-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+/* Card back Styles */
+.Module_cards .card_back_title{
+    font-size: 24px;
+    font-weight: 700px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+.Module_cards .card_back-description{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #e6f3ff;
+    text-align: center;
+}
+.Module_cards .card_back_features{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.Module_cards .card_back_features li{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+    color: #fff;
+}
+.Module_cards .card_back_features li:last-child{
+    border-bottom: none;
+}
+.Module_cards .card_back_btn{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Module_cards .card_back_btn:hover{
+    background-color: white;
+    color: #2429ad;
+    transform: translateY(-2px);
+}
+
+.Module_cards .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: black;
+}
+.Module_cards .swiper-button-prev, .swiper-button-next{
+    margin-top: -50px;
+    color: black;
+    transition: 0.3s ease;
+}
+.Module_cards .swiper-button-prev:hover,
+.swiper-button-next{
+    color: black;
+}
+
+
+
+
+/* Naming animation in hover */
+.Module_cards .card_article:hover .card_data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.Module_cards .card_article:hover{
+    animation: remove-overflow 2s forwards;
+}
+.Module_cards .card_article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+.Module_cards .card_article:not(:hover) .card_data{
+    animation: remove-data 1s forwards;
+}
+
+/* Card animations */
+@keyframes show-data {
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
+    }
+}
+@keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-5rem);
+    }
+}
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+
+/* 3D Boooks */
+.book3D{
+width: 100%;
+	height: 100vh;
+	background-color: #F1F1F1;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+.book3D .book {
+	width: 350px;
+	height: 500px;
+	position: relative;
+	box-shadow: -40px 20px 50px rgba(0,0,0,0.4);
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.book3D .book:before {
+	content: '';
+	position: absolute;
+	left: -20px;
+	width: 20px;
+	height: 100%;
+	background: linear-gradient(90deg, skyblue, #111);
+	transform: skewY(-3deg) rotateY(-50deg);
+	transform-origin: right;
+}
+
+.book3D .book:hover {
+	transform: rotate(-5deg);
+}
+
+.book3D .book-img {
+	background: url(Image02.jpg) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: perspective(2000px);
+	transform-style: preserve-3d;
+	transform-origin: left;
+	transition: 1s;
+}
+
+.book3D .book:hover .book-img {
+    cursor: grab;
+	transform: perspective(2000px) rotateY(-140deg);
+}
+
+.book3D .text {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: inset 350px 0 50px rgba(0,0,0,0.1);
+	transition: 1s;
+}
+
+.book3D .book:hover .text {
+	box-shadow: inset 20px 0 25px rgba(0,0,0,0.1);
+}
+
+.book3D .text h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.book3D .text p {
+	line-height: 1.7;
+	font-size: 15px;
+	color: #444;
+	margin-bottom: 15px;
+}
+
+.book3D .text a {
+	text-decoration: none;
+	letter-spacing: 0.7px;
+	font-size: 14px;
+}
+
+.book3D .text a i {
+	transition: 0.5s;
+}
+
+.book3D .text a:hover i {
+	transform: translateX(10px);
+}
+/* seeTPIMS */
+.seeTPIMS {
+    background: #4a50e2;
+    padding: 60px 60px 60px 60px;
+}
+.seeTPIMS .section-content h2{
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    padding: 0 0 20px;
+}
+.seeTPIMS .section-content p{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0 0 20px;
+}
+.seeTPIMS .section-content h3{
+font-size: 28px;
+}
+.seeTPIMS .contact-us{
+    text-align: center;
+    padding: 80px;
+    font-size: xx-large;
+}
